@@ -39,3 +39,19 @@ Anotações Úteis
         Email:<br>
         <input type="email" name="email">
     </form>
+
+    tipos de uso de css
+
+    sobre classe e id
+    clase se aplica a mais de um objeto  #classe
+    id se aplica a um tipo de objeto     .id
+
+    elementos do tipo block ocupam toda a tela
+    div é um elemento block
+    ja span é inline, que agrupa seu conteúdo linha a linha
+    o span é recomendado para formatação de textos específicos
+    
+
+    external style sheet    /// linkar arquivo css externo
+    internal style sheet    /// usar o css na head
+    inline style            /// usar css na linha desejada 
