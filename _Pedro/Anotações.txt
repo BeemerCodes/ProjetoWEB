@@ -1,6 +1,6 @@
 Anotações Úteis
 
-    Formulário simpless
+    Formulário simples
 
   <form>
         <h2>Login:</h2>
