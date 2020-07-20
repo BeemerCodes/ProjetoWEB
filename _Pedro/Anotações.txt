@@ -1,0 +1,41 @@
+Anotações Úteis
+
+    Formulário simples
+
+  <form>
+        <h2>Login:</h2>
+            <input type="email" name="login"><br>
+        
+        Senha:<br>
+            <input type="password" name="senha"><br>
+
+            <input type="button" value="Logar">
+        <h3>Cadastre-se:</h3>
+        Nome: <br>
+        <input type="text" name="nome"><br>
+        Idade: <br>
+        <input type="number" name="idade"><br>
+        Sexo:<br>
+        <input type="radio" name="sexo" value="M">Masculino<br>
+        <input type="radio" name="sexo" value="F">Feminino<br>
+
+        Interesses:<br>
+        <input type="checkbox" name="Interesses">Fale Conosco<br>
+        <input type="checkbox" name="Interesses">Sac<br>
+        <input type="checkbox" name="Interesses">Quem Somos <br><br>
+
+        Estado: <br>
+        <select>
+            <option value="sp">SP</option>
+            <option value="rj">RJ</option>
+            <option value="mg">MG</option>
+        </select>
+        <br>   
+
+        Observações:<br>
+        <textarea name="observacoes" cols="20" rows="3"></textarea><br>
+        <input type="submit">
+        <br><br>
+        Email:<br>
+        <input type="email" name="email">
+    </form>
