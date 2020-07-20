@@ -33,7 +33,7 @@ Anotações Úteis
         <br>   
 
         Observações:<br>
-        <textarea name="observacoes" cols="20" rows="3"></textarea><br>
+        <textarea name="observações" cols="20" rows="3"></textarea><br>
         <input type="submit">
         <br><br>
         Email:<br>
@@ -43,13 +43,38 @@ Anotações Úteis
     tipos de uso de css
 
     sobre classe e id
-    clase se aplica a mais de um objeto  #classe
+    classe se aplica a mais de um objeto  #classe
     id se aplica a um tipo de objeto     .id
 
     elementos do tipo block ocupam toda a tela
     div é um elemento block
     ja span é inline, que agrupa seu conteúdo linha a linha
     o span é recomendado para formatação de textos específicos
+    
+    para dar um negrito no texto via css
+    pode se usar o
+    font-weight: bold; , font-weight: bolder; ou font-weight: 76%;
+
+    também pode se usar estilos
+
+    font-style: italic;
+
+    para criar linha sobre,acima ou em abaixo do texto
+
+    text-decoration: underline;
+    text-decoration: overline;
+    text-decoration: line-through;
+
+    pode-se reduzir esses estilos apenas para um grupo de comandos
+
+    font: bold 40px "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+
+    para colocar uma imagem fixa no background
+    background-attachment: fixed;
+
+    para posicionar a imagem
+    background-position: center; ou background-position: left center;
+
     
 
     external style sheet    /// linkar arquivo css externo
