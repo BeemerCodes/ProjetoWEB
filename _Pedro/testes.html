@@ -14,17 +14,33 @@
             background: white;
             margin: 10px auto;
             padding: 10px;
+            box-shadow: 2px 2px 15px black;
         }
 
-        h1 {
-
+        h3 {
+            margin: 0px;
+            padding: 5px;
         }
 
         p {
-            width: 300px;
-            display: inline-block;
+            width: 250px;
             padding: 10px;
             margin: 10px;
+        }
+
+        .fixed {
+            width: 190px;
+            padding: 15px;
+            position: fixed;
+            top: 10px;
+            right: 10px;
+            background: white;
+            box-shadow: 2px 2px 5px black;
+            transition: 0.4s;
+        }
+
+        .fixed:hover {
+            box-shadow: 2px 2px 20px black;
         }
 
     </style>
@@ -39,8 +55,22 @@
              beatae esse, itaque quod, suscipit impedit in eos?
         </p>
 
+        <div class="fixed">
+
+            <h3>Chat Online</h3>
+            <input type="text" name="mensagem">
+            <input type="button" value="Enviar">
+        </div>
+
         <p>
-            P2 Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            P3 Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Vero possimus quidem, odio repellendus voluptas quaerat
+             deleniti! Cum placeat quia numquam accusantium assumenda 
+             beatae esse, itaque quod, suscipit impedit in eos?
+        </p>
+
+        <p>
+            P4 Lorem ipsum dolor sit amet consectetur adipisicing elit. 
             Vero possimus quidem, odio repellendus voluptas quaerat
              deleniti! Cum placeat quia numquam accusantium assumenda 
              beatae esse, itaque quod, suscipit impedit in eos?
