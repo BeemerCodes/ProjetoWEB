@@ -87,6 +87,39 @@ Anotações Úteis
 
     OBS: dentro do container que tenha os elementos flutuantes
 
+    para fazer um degrade de cores
+
+    background: linear-gradiente(cor1, cor2);
+
+    Posições:
+
+    relative : relativa a posição onde estava, necessita passar as Posições top, right, bottom e left
+    
+    .relative {
+        position: relative;
+        top: 10px;
+        left: 40px;
+    }
+
+     static: é a Posição padrão
+
+     absolute: relativa ao container pai, o elemento com a Posição absoluta sai do fluxo padrão
+     e não afeta os outros elementos
+
+     .absolute {
+         position: absolute;
+         top: 10px;
+         right: 30px;
+     }
+
+     fixed: fixo em relação a janela
+
+     .fixed {
+         position: fixed;
+         top: 10px;
+         left: 30px;
+     }
+
     
 
     external style sheet    /// linkar arquivo css externo
