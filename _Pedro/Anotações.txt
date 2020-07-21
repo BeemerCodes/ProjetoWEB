@@ -75,6 +75,18 @@ Anotações Úteis
     para posicionar a imagem
     background-position: center; ou background-position: left center;
 
+    para limpar o fluxo de elementos flutuantes apenas:
+
+    .clear {
+        clear: left or right or both;
+    }
+    
+    e após a div que quer q tenha o fluxo retornado apenas adicionar:
+
+    <div class="clear"></div>
+
+    OBS: dentro do container que tenha os elementos flutuantes
+
     
 
     external style sheet    /// linkar arquivo css externo

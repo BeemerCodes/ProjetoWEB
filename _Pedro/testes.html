@@ -5,26 +5,124 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Testes</title>
     <style>
-        * {
-            padding: 0;
-            margin: 25%;
-        }
         body {
-            background-color: rgb(194, 194, 194);
-            border: 2px dashed rgba(13, 84, 87, 0.62);
-            border-radius: 0px 40px 0px 40px;
-            text-align: center;
+            background: #d38520;
+            color: rgb(47, 47, 47);
+        }
+        a {
+            text-decoration: none;
+            color: rgb(17, 17, 17);
         }
 
-        p {
-            color: rgb(0, 100, 114);
-            font-size: 1.5em;
+        h1{
+            text-align: center;
+            text-shadow: 1px 1px 2px black;
         }
+        #container {
+            width: 1000px;
+            
+       }
+
+        .noticia {
+            background: #7e7e7e;
+            padding: 10px;
+            width: 280px;
+            margin: 10px;
+            float: left;
+            box-shadow: 2px 2px 5px black;
+            transition: 0.5s;
+        }
+
+        .noticia:hover {
+            box-shadow: 2px 2px 25px black;
+            transition: 0.2;
+        }
+
+        .clear {
+            clear: both;
+        }
+
+        .galeria {
+            background: rgb(226, 226, 226);
+            width: 265px;
+            padding: 5px;
+            margin: 22px;
+            float: left;
+            box-shadow: 2px 2px 5px black;
+            transition: 0.7s;
+        }
+
+        .galeria:hover {
+            box-shadow: 2px 2px 25px black;
+            transition: 0.3s;
+            transform: scale(1.03);
+        }
+
+
     </style>
 </head>
 <body>
     <div>
-        <p>Content</p>
+        <h1>Bem Vindo ao uou Noticias!</h1>
+    </div>
+    <div id="container">
+        <div class="noticia">
+            <h2>titulo da noticia</h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus 
+                totam quia numquam, aliquam maxime incidunt aut doloremque aspernatur 
+                reiciendis. Explicabo deserunt, tenetur obcaecati repudiandae dolore ullam
+                rerum perferendis dolorum minima.
+            </p>
+            <a href="">Veja mais</a>
+        </div>
+
+        <div class="noticia">
+            <h2>titulo da noticia 2</h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus 
+                totam quia numquam, aliquam maxime incidunt aut doloremque aspernatur 
+                reiciendis. Explicabo deserunt, tenetur obcaecati repudiandae dolore ullam
+                rerum perferendis dolorum minima.
+            </p>
+            <a href="">Veja mais</a>
+        </div>
+
+        <div class="noticia">
+            <h2>titulo da noticia 3</h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus 
+                totam quia numquam, aliquam maxime incidunt aut doloremque aspernatur 
+                reiciendis. Explicabo deserunt, tenetur obcaecati repudiandae dolore ullam
+                rerum perferendis dolorum minima.
+            </p>
+            <a href="">Veja mais</a>
+        </div>
+        <div class="clear"></div>
+            <div class="galeria">
+                <img src="elementos-flutuantes/imagens/imagem1.png">
+                <p>Resumo...</p>
+            </div>
+
+            <div class="galeria">
+                <img src="elementos-flutuantes/imagens/imagem2.png">
+                <p>Resumo...</p>
+            </div>
+
+            <div class="galeria">
+                <img src="elementos-flutuantes/imagens/imagem3.png">
+                <p>Resumo...</p>
+            </div>
+
+            <div class="galeria">
+                <img src="elementos-flutuantes/imagens/imagem4.png">
+                <p>Resumo...</p>
+            </div>
+
+            <div class="galeria">
+                <img src="elementos-flutuantes/imagens/imagem5.png">
+                <p>Resumo...</p>
+            </div>
     </div>
 </body>
 </html>
