@@ -1,29 +1,31 @@
 body {
     background-image: url('_imagens/fundo.png');
-
 }
-#capa {
-    position: relative;
-    left: 450px;
+
+#container {
+    width: 900px;
 }
 
  #menu {
+    background-color: #c5c5b2;
+    padding: 10px;
     color: #606060;
     font-size: 30px;
-    position: relative;
-    left: 555px;
     font-weight: 600;
-    
+}
+.sobre {
+    background-color: #e8e8d9;
+    padding: 10px;
 }
 h2 {
     font-size: 25px;
     color:#828271;
 }
 p {
-    font-size: 18px;
     color: #534e4e;
 }
-a{
+a {
+    padding: 5px;
     text-decoration: none;
     color: #606060;;
 }
@@ -31,29 +33,7 @@ a:hover {
     color: #e8e8d9;
 }
 
-#sobre {
-    display: block;
-    height:  500px;
-    width: 898px;
-    margin: 20px;
-    padding: 5px;
-    background-color: #e8e8d9;
-    position: relative;
-    left: 430px;
-}
-#campanha {
-    display: block;
-    height:  1900px;
-    width: 898px;
-    margin: 20px;
-    padding: 5px;
-    background-color: #e8e8d9;
-    position: relative;
-    left: 430px;
-}
 .fotos  {
-    position: relative;
-    left: 100px;
     border: 10px solid #828271;
     transition: 1s;
 }
@@ -63,28 +43,14 @@ a:hover {
 }
 
 #foto  {
-    position: relative;
-    left: 100px;
     border: 10px solid #828271;
 }
-#contato {
-    display: block;
-    height:  700px;
-    width: 898px;
-    margin: 15px;
-    padding: 5px;
-    background-color: #e8e8d9;
-    position: relative;
-    left: 430px;
-}
-footer {
-    position: relative;
+
+.dir {
+    padding: 10px;
+    text-align: center;
     font-weight: 800;
-    left: 780px;
 }
 #camp {
-    position: relative;
     font-weight: 800;
-    left: 330px;
-    top: 130px;
 }
