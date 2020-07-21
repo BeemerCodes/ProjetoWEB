@@ -1,0 +1,90 @@
+body {
+    background-image: url('../arquivos-necessarios-projeto-anna-bella/fundo.png');
+
+}
+#capa {
+    position: relative;
+    left: 450px;
+}
+
+ #menu {
+    color: #606060;
+    font-size: 30px;
+    position: relative;
+    left: 555px;
+    font-weight: 600;
+    
+}
+h2 {
+    font-size: 25px;
+    color:#828271;
+}
+p {
+    font-size: 18px;
+    color: #534e4e;
+}
+a{
+    text-decoration: none;
+    color: #606060;;
+}
+a:hover {
+    color: #e8e8d9;
+}
+
+#sobre {
+    display: block;
+    height:  500px;
+    width: 898px;
+    margin: 20px;
+    padding: 5px;
+    background-color: #e8e8d9;
+    position: relative;
+    left: 430px;
+}
+#campanha {
+    display: block;
+    height:  1900px;
+    width: 898px;
+    margin: 20px;
+    padding: 5px;
+    background-color: #e8e8d9;
+    position: relative;
+    left: 430px;
+}
+.fotos  {
+    position: relative;
+    left: 100px;
+    border: 10px solid #828271;
+    transition: 1s;
+}
+
+.fotos:hover {
+    transform: scale(1.03);
+}
+
+#foto  {
+    position: relative;
+    left: 100px;
+    border: 10px solid #828271;
+}
+#contato {
+    display: block;
+    height:  700px;
+    width: 898px;
+    margin: 15px;
+    padding: 5px;
+    background-color: #e8e8d9;
+    position: relative;
+    left: 430px;
+}
+footer {
+    position: relative;
+    font-weight: 800;
+    left: 780px;
+}
+#camp {
+    position: relative;
+    font-weight: 800;
+    left: 330px;
+    top: 130px;
+}
