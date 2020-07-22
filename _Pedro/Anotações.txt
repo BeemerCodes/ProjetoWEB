@@ -120,8 +120,9 @@ Anotações Úteis
          left: 30px;
      }
 
-    
-
     external style sheet    /// linkar arquivo css externo
     internal style sheet    /// usar o css na head
     inline style            /// usar css na linha desejada 
+
+    quando dois elementos se sobrepõem o que esta acima no codigo
+    aparecera primeiro, paar mudar isso usa-se
