@@ -124,5 +124,13 @@ Anotações Úteis
     internal style sheet    /// usar o css na head
     inline style            /// usar css na linha desejada 
 
-    quando dois elementos se sobrepõem o que esta acima no codigo
-    aparecera primeiro, paar mudar isso usa-se
+    quando dois elementos se sobrepõem o que esta acima no código
+    aparecera primeiro, para mudar isso usa-se o z-index, EX:
+
+    .primeiro {
+        z-index: 1;
+    }
+
+    .segundo {
+        z-index: 0;
+    }
