@@ -134,3 +134,49 @@ Anotações Úteis
     .segundo {
         z-index: 0;
     }
+
+    estados de links:
+
+    para links não visitados:
+
+    a:link {
+
+    }
+
+    para links visitados:
+
+    a:visited {
+
+    }
+
+    para hover:
+
+    a:hover {
+
+    }
+
+    para links ativos:
+
+    a:active {
+
+    }
+
+
+    ordem para formatação:
+
+    link, visited; hover and active
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
