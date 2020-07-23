@@ -1,0 +1,117 @@
+para trabalhar com seletores de filhos ex:
+
+necessita ser o filho direto
+
+#container>h1 {
+    color: white;
+}
+
+para seletores de descendentes:
+
+não necessita ser o filho direto
+
+li a {
+    color: white;
+}
+
+qualquer link dentro de uma li seria selecionado
+
+para seletor de irmão adjacente:
+
+seleciona o elemento proximo de outro
+
+h1+p {
+    color: gray;
+}
+
+iria selecionar o primeiro p após h1 (apenas o primeiro)
+
+paar seletor de irmão geral:
+
+h1~p {
+    color: gray;
+}
+
+iria selecionar todos os parágrafos irmãs de h1
+
+herança e especificidade:
+usar !important para definir que o elemento que deve ser aplicado
+
+p {
+    color: red;
+}
+
+p {
+    color: red;
+}
+
+nesse caso seria selecionado o ultimo, para o contrario:
+
+p {
+    color: red !important;
+}
+
+p {
+    color: red;
+}
+
+não é recomendado  o uso!!
+
+quanto mais especifico o seletor ser, mais importância  terá:
+
+* {
+    color: red;
+}
+
+h1 {
+    color: blue;
+}   
+
+o titulo ficaria azul
+
+caso tenha uma classe ou id mais relevante ainda seria:
+
+* {
+    color: red;
+}
+
+h1 {
+    color: blue;
+}   
+
+h1.verde {
+    color: green;
+}
+
+ficaria verde! 
+
+o id é mais especifico do que o class
+
+* {
+    color: red;
+}
+
+h1 {
+    color: blue;
+}   
+
+h1.verde {
+    color: green;
+}
+
+h1#amarelo {
+    color: yellow;
+}
+
+seria amarelo definido a cor do h1!
+
+
+
+
+
+
+
+
+
+
+
