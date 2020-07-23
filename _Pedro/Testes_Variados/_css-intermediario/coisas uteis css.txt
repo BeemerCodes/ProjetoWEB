@@ -129,8 +129,38 @@ para deixar uma pagina marcada com uma classe:
 
 apenas basta definir a classe em cada link nas paginas
 
+calculo de tamanho:
 
+ex uma largura fixa de 720px em layout liquido:
 
+(580*100)/700
+
+OBS: os 20px restantes são do padding e etc
+
+para definir um limite mínimo de tamanho em layout ou máximo:
+
+min-width: 720px;
+max-width: 1080px;
+
+também há:
+
+min-height: 120px;
+max-height: 350px;
+
+tabelas:
+
+para adicionar bordas porem deixar junta em uma:
+
+border-colapse: colapse;
+
+table {
+            width: 600px;
+            border-collapse: collapse;
+
+        }
+
+text-transform: uppercase; para aplicar maiusculas
+letter-spacing: ; para separar as letras um pouco
 
 
 

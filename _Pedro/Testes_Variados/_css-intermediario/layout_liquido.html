@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout liquido</title>
+    <style>
+        body {
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            background: #f2f2f2;
+        }
+
+        #container {
+            width: 85%;
+            margin: 0px auto;
+            background: rgb(255, 255, 255);
+            min-width: 820px;
+        }
+
+        #marca {
+            height: 200px;
+            background: #225992 url(imagens-liquidas/cabecalho2.jpg) no-repeat center;
+            text-align: center;
+            line-height: 200px;
+        }
+
+        #conteudo {
+            width: 75%;
+            float: right;
+        }
+
+
+/*
+        #imagem {
+            width: 90%;
+            overflow: hidden;
+        }
+*/
+        #navegacao {
+            width: 23%;
+            float: left;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            background: #d1d1d1;
+        }
+
+        #navegacao ul {
+            list-style: none;
+        }
+
+        #navegacao li a {
+            text-decoration: none;
+        }
+
+        #conteudo-principal {
+            width: 63%;
+            float: left;
+        }
+
+        img.img-noticia {
+            width: 94%;
+            padding: 2%;
+            max-width: 600px;
+        }
+
+        #conteudo-secundario {
+            width: 35%;
+            float: right;
+            background: #d1d1d1;
+        }
+
+        #conteudo-secundario h1,
+        #conteudo-secundario h2,
+        #conteudo-secundario h3,
+        #conteudo-secundario p {
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+
+        #rodape {
+            clear: both;
+            background: #c4c4c4;
+            padding: 5px;
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <div id="container">
+
+        <div id="marca">Marca</div>
+
+        <div id="conteudo">
+            <div id="conteudo-principal">
+
+                <h1>Encontrado casa de anões </h1>
+
+                        <img class="img-noticia" src="imagens-liquidas/natureza.jpg">
+                    
+
+                <p>
+                    Lorem ipsum, dolor sit amet
+                    consectetur adipisicing elit.
+                    Obcaecati assumenda odit corporis aut,
+                    consequuntur libero totam. Quam voluptates
+                    ipsum molestiae, ducimus perferendis sit
+                    doloremque voluptatibus. Explicabo totam
+                    praesentium cum tenetur.
+                </p>
+                <p>
+                    Lorem ipsum, dolor sit amet
+                    consectetur adipisicing elit.
+                    Obcaecati assumenda odit corporis aut,
+                    consequuntur libero totam. Quam voluptates
+                    ipsum molestiae, ducimus perferendis sit
+                    doloremque voluptatibus. Explicabo totam
+                    praesentium cum tenetur.
+                </p>
+            </div>
+            
+            <div id="conteudo-secundario">
+                <h1>Crise assola angola</h1>
+                <p>
+                    Lorem ipsum, dolor sit amet
+                    consectetur adipisicing elit.
+                    Obcaecati assumenda odit corporis aut,
+                    consequuntur libero totam. Quam voluptates
+                    ipsum molestiae, ducimus perferendis sit
+                    doloremque voluptatibus. Explicabo totam
+                    praesentium cum tenetur.
+                </p>
+            </div>
+        </div>
+
+        <div id="navegacao">
+
+            <ul>
+                <li> <a href="">Home</a> </li>
+                <li> <a href="">Sobre</a> </li>
+                <li> <a href="">Notícias</a> </li>
+                <li> <a href="">Contato</a> </li>
+                <li> <a href="">Games</a> </li>
+                <li> <a href="">Reclamações</a> </li>
+                <li> <a href="">Anúncios</a> </li>
+                <li> <a href="">Informática</a> </li>
+                <li> <a href="">Blog</a> </li>
+                <li> <a href="">Redes sociais</a> </li>
+            </ul>
+
+        </div>
+
+              <div id="rodape">Rodape</div>
+
+    </div>
+</body>
+</html>
