@@ -105,6 +105,32 @@ h1#amarelo {
 
 seria amarelo definido a cor do h1!
 
+para indentar os textos se usa-se:
+
+text-ident: 20px;
+
+para centralizar textos pode se usar:
+
+line-height
+
+p {
+    height: 40px;
+    line-height: 40px;
+
+}
+
+para deixar uma pagina marcada com uma classe:
+
+.selecionado a {
+
+}
+
+        <li class="selecionado"><a href="nav-vert.html">Home</a></li>
+
+apenas basta definir a classe em cada link nas paginas
+
+
+
 
 
 
