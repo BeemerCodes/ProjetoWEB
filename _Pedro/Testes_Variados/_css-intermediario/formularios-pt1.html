@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios pt-1</title>
+    <style>
+        body {
+            font-family: fantasy;
+        }
+
+        fieldset {
+            padding: 1em;
+            border: 1px solid #CCC;
+            background: #f8f8f8;
+            margin: 1em 0;
+        }
+
+        legend {
+            font-weight: bold;
+        }
+
+        label {
+            display: block;
+            cursor: pointer;
+        }
+
+        input [type="text"] {
+            width: 20em;
+        }
+
+        .radio {
+            margin: 1em;
+        }
+ 
+        /*                                         /// Para navegadores mais antigos ///
+        input.radio, input.checkbox, input.submit {
+            width: auto;
+        }
+        */
+
+
+
+    </style>
+</head>
+<body>
+    <h2>estilizando formulario</h2>
+    <form>
+        <fieldset>
+            <legend>Detelhe de contato</legend>
+            <div>
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome">
+
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email">
+
+                <label>URL: <br>
+                <input type="text" id="url">
+                </label>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Comentarios</legend>
+            <div>
+                <label for="mensagem">Mensagem</label>
+                <textarea name="mensagem" id="mensagem" cols="32" rows="5"></textarea>
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Lembrar de mim</legend>
+            <div>
+                <label for="">
+                    <input class="radio" type="radio" name="lembrar" id="sim">Sim
+                </label>
+            </div>
+            <div>
+                <label for="">
+                    <input class="radio" type="radio" name="lembrar" id="nao">Não
+                </label>
+            </div>
+        </fieldset>
+    </form>
+</body>
+</html>

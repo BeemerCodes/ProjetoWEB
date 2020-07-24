@@ -159,8 +159,12 @@ table {
 
         }
 
-text-transform: uppercase; para aplicar maiusculas
+text-transform: uppercase; para aplicar maiúsculas
 letter-spacing: ; para separar as letras um pouco
+
+gradiente em botões
+
+background: linear-gradient(to bottom, #ffae0d, #e28000);
 
 
 
