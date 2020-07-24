@@ -25,7 +25,11 @@ textarea {
 }*/
 body {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    background: #643d87 url(../imagens/fundo.jpg) no-repeat top center;
+    background: linear-gradient(to bottom, #4a2d73, #f2b2ac, #bf6576) no-repeat;
+}
+#full {
+min-height: 821px;
+max-height: 950px;
 }
 #container {
     width: 400px;
