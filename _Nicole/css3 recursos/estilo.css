@@ -107,3 +107,16 @@
 -------------------Transicoes----------------------
 
     */
+
+    #caixa {
+        width: 300px;
+        height: 300px;
+        background: coral;
+    }
+
+    #caixa:hover {
+        width: 400px;
+        background: blueviolet;
+       /* transition: width 3s, background 3s; */
+        transition: all 3s;
+    }
