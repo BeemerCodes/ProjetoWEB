@@ -12,8 +12,8 @@ body {
 }
 
 #container {
-    background: #ede9cc;
-    min-width: 740px;
+    background: #ede9cc url(_imagens/bg-container.png) top center repeat-y;
+    min-width: 940px;
     max-width: 1180px;
     margin: 0 auto;
 }
@@ -76,6 +76,38 @@ body {
     line-height: 2.1em;
 }
 
+#menu {
+    margin-top: 15px;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.depoimento {
+    width: 226px;
+    height: 164px;
+    float: right;
+}
+
+ul#navegacao {
+    float: left;
+}
+
+ul#navegacao a {
+    text-transform: uppercase;
+    font-size: 0.8em;
+    padding: 5px 10px;
+    color: #6e672c;
+    line-height: 30px;
+}
+
+ul#navegacao a:hover {
+    background: #fdf6be;
+}
+
 a {
     text-decoration: none;
 }
@@ -86,4 +118,69 @@ a.reserva {
     color: #fff5b0;
     padding: 5px 10px;
     float: right;
+}
+
+#area-principal {
+    width: 50%;
+    float: left;
+    padding: 15px 0px;
+    background: url(_imagens/bg-area-principal.png) top left repeat-x;
+}
+
+h2 {
+    color: #7d7640;
+    font-size: 1.1em;
+    padding: 5px 0px;
+}
+
+p {
+    font-size: 1em;
+    margin-bottom: 10px;
+}
+
+#area-lateral {
+    width: 50%;
+    float: right;
+    padding: 20px 0px;
+    background: url(_imagens/bg-area-lateral.png) top right repeat-x;
+}
+
+#beneficios li {
+    padding: 8px;
+    border-bottom: 1px solid #f3efcb;
+    height: 6em;
+}
+
+#beneficios li a img {
+    float: left;
+    margin-right: 8px;
+}
+
+#beneficios li a p {
+    font-size: 0.8em;
+    color: black;
+}
+
+#beneficios li a h3 {
+    font-size: 1em;
+    color: #615b2d;
+    padding: 5px 0px;
+    background: url(_imagens/ornamento.png) no-repeat center right;
+}
+
+#beneficios li:hover {
+    background: #f6f3d6;
+    cursor: pointer;
+}
+
+.conteudo {
+    margin: 0 auto;
+    width: 90%;
+}
+
+#rodape {
+    clear: both;
+    padding: 16px;
+    color: #7d7640;
+    background: white url(_imagens/bg-rodape.png) repeat-x top;
 }
