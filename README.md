@@ -28,8 +28,3 @@ Curso WEB Completo
 * [ ] Criando Aplicações Mobile com IONIC
 * [ ] WordPress
 
-## Tabela De Commits:
-
-BeemerCodes | 998nick
-:-----------|--------:
-Commits: 44 |Commits: 17
