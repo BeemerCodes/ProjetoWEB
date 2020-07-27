@@ -8,7 +8,7 @@ Curso WEB Completo
 ![Imagem](_foto.jpg)
 * [x] Html 5
 * [x] Css 3
-* [ ] Css 3 (Intermediario/Avançado)
+* [x] Css 3 (Intermediario/Avançado)
 * [ ] Html e Css (Recursos Especiais)
 * [ ] Bootstrap & Design responsivo
 * [ ] JavaScript
