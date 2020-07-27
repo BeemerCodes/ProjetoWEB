@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Degrade & Transparência</title>
+    <style>
+        #caixa {
+            width: 300px;
+            height: 350px;
+            box-shadow: 2px -2px 10px 1px black;
+            background: linear-gradient(40deg, rgb(0, 225, 255), rgb(39, 133, 255));
+            /*background: linear-gradient( rgb(85, 85, 85), rgb(0, 225, 255));*/
+            /* 
+            to left ou to right para escolher a direção
+            também pode se usar top e bottom pra isso
+            
+            pode se rotacionar também utilizando antes das cores a quantidade em
+            graus: 80deg
+
+            pode-se utilizar mais de 2 cores apenas */
+        }  
+
+        #caixa h1 {
+            background: rgb(73, 73, 73);
+            color: rgb(182, 182, 182);
+            padding: 15px;
+            line-height: 20px;
+            text-align: center;
+            text-shadow: 1px 1px 10px black;
+        }
+
+        #caixa p {
+            padding: 0px 15px;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="caixa">
+        <h1>Teste de Degrades</h1>
+        <p>
+            Mauris porttitor, libero a elementum imperdiet, enim nisi porttitor velit,
+            at accumsan est felis non ante. Sed efficitur porta nibh et iaculis.
+            In nisi elit, blandit ac scelerisque non, commodo ut nunc. Fusce sagittis
+            lacus quis ligula bibendum, sagittis varius erat vulputate. Praesent vestibulum 
+            odio at massa dapibus aliquet.
+        </p>
+
+    </div>
+</body>
+</html>
