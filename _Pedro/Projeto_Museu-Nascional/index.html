@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Museu Nacional</title>
+    <link rel="shortcut icon" href="_img/icone.svg">
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="style.css">
+	<!--[if lt IE 9]>
+	    <script src="html5shiv.js"></script>
+    <![endif]-->
+</head>
+<body>
+    <div id="container"> <!-- inicio container -->
+
+        <header> <!-- inicio header -->
+            <div id="logo">
+                <h1>
+                    <a href="">Museu Nacional</a>
+                </h1>
+            </div>
+
+            <nav> <!-- inicio nav -->
+                <ul>
+                    <li> <a href="">Home</a> </li>
+                    <li> <a href="">Exposições</a> </li>
+                    <li> <a href="">Pesquisas</a> </li>
+                    <li> <a href="">vídeos</a> </li>
+                    <li> <a href="">fotos</a> </li>
+                    <li> <a href="">contato</a> </li>
+                </ul>
+            </nav> <!-- fim nav -->
+        </header> <!-- fim header -->
+        <div id="principal">
+            <div id="conteudo">
+                <section id="capa">
+                    <img src="_img/museu.png">
+                </section>
+
+                <section id="postagem">
+                    <article id="video">
+                        <h3>Vídeo: Conheça o museus</h3>
+
+                        <iframe width="310" height="170" src="https://www.youtube.com/embed/RGUYb-hivrc" 
+                        frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; 
+                        picture-in-picture" allowfullscreen></iframe>
+
+                    </article>
+
+                    <article id="mapa">
+                        <h3>Mapa encontre o museu</h3>
+
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14700.825270907055!2d-43.23526221236445!3d-22.905759761369872!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x997e58a085b7af%3A0x4d11e9a933d38ce3!2sMuseu%20Nacional%20-%20UFRJ!5e0!3m2!1spt-BR!2sbr!4v1595904787022!5m2!1spt-BR!2sbr"
+                         width="310" height="170" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+
+                    </article>
+
+                    <article id="exposicoes">
+                        <h3>Exposições</h3>
+                        <ul>
+                            <li> <a href="">Os assustadores insetos</a> </li>
+
+                            <li> <a href="">O Crânio de luiza, a mulher mais antiga do Brasil</a> </li>
+
+                            <li> <a href="">Preguiça gigante e Tigre dentes de sabre</a> </li>
+
+                            <li> <a href="">Plantas do brasil central</a> </li>
+
+                            <li> <a href="">Teresa Cristina: A imperatriz Arqueóloga</a> </li>
+
+                            <li> <a href="">Arte Com dinossauros - Paleoarte</a> </li>
+
+                            <li> <a href=""> <strong>Veja todos (65)</strong> </a> </li>
+                        </ul>
+                    </article>
+
+                    <article id="historia">
+                        <h3>200 Anos de história</h3>
+                        <p>
+                            O Museu Nacional é uma instituição científica surgida no Brasil,
+                            em 1818, e possui departamentos relacionados a diferentes áreas do conhecimento,
+                            tais como antropologia, geologia, botânica, mineralogia etc.
+                            Surgido durante o Período Joanino, o museu foi sempre uma referência na 
+                            produção de conhecimento e um local de acesso à cultura. Em junho de 2018,
+                            o Museu Nacional completou 200 anos de existência.
+                        </p>
+                        <a href=""> <strong>Leia mais!</strong> </a>
+                    </article>
+                </section>
+
+            </div>
+            <aside>
+                <section id="depoimento">
+                    <img src="_img/depoimento.png">
+                </section>
+
+                <section id="visita">
+                    <h4>Faça uma visita</h4>
+                    <form>
+                        <fieldset>
+                            <legend>Selecione uma data</legend>
+                            <label for="data">Data</label>
+                            <input class="campo" type="text" id="data" placeholder="dd/mm/aaaa">
+
+                            <label for="qtd">Qtd pessoas</label>
+                            <input style="width: 30px;" class="campo" type="text" id="qtd" value="1">
+                        </fieldset>
+
+                        <input class="botao" type="submit" value="Verificar disponibilidade">
+
+                    </form>
+                </section>
+                <section id="galeria">
+                    <h4>Galeria de fotos</h4>
+                    <a href="">
+                        <img src="_img/imagem1.jpg" height="93px" width="93px">
+                    </a>
+
+                    <a href="">
+                        <img src="_img/imagem2.jpg" height="93px" width="93px">
+                    </a>
+
+                    <a href="">
+                        <img src="_img/imagem3.jpg" height="93px" width="93px">
+                    </a>
+
+                    <a href="">
+                        <img src="_img/imagem4.jpg" height="93px" width="93px">
+                    </a>
+                </section>
+            </aside>
+        </div>
+
+    </div><!-- fim container -->
+</body>
+</html>
