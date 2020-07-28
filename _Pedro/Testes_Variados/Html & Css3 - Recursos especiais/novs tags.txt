@@ -1,0 +1,70 @@
+header: para cabeçalhos
+nav: para menus de navegação
+footer: para rodapé
+article: para postagens
+section: para separar conteúdos
+aside: para conteúdos laterais
+time: para datas
+
+NOVAS TAGS DE INPUT:
+
+required para campos obrigatórios
+
+autofocus para focar no campo 
+
+<form>
+        <label for="email">Email</label>
+        <input type="email" name="email" required autofocus>
+        <br><br>
+        <input type="submit" value="Enviar">
+ </form>
+
+<form>
+        <label for="numero">numero</label>
+        <input type="number" name="numero" min="5" max="10" step="2">
+        <br><br>
+        <input type="submit" value="Enviar">
+ </form>
+
+ <form>
+        <label for="url">url</label>
+        <input type="url" name="url" placeholder="https://">
+        <br><br>
+        <input type="submit" value="Enviar">
+ </form>
+
+
+search adiciona um x para apagar todo o texto dentro da caixa
+ <form>
+        <label for="pesquisa">pesquisa</label>
+        <input type="search" name="pesquisa">
+        <br><br>
+        <input type="submit" value="Enviar">
+ </form>
+
+  <form>
+        <label for="range">range</label>
+        <input type="range" name="range" min="1" max="3" value="2">
+        <br><br>
+        <input type="submit" value="Enviar">
+ </form>
+
+  <form>
+        <label for="data">data</label>
+        <input type="date" name="date">
+        <br><br>
+        <input type="submit" value="Enviar">
+ </form>
+
+ <form>
+        <label for="cor">cor</label>
+        <input type="color" name="cor">
+        <br><br>
+        <input type="submit" value="Enviar">
+ </form>
+
+para IE poder funcionar com tags novas (usar)
+
+<!--[if lt IE 9]>
+	<script src="html5shiv.js"></script>
+<![endif]-->
