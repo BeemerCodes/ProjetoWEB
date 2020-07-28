@@ -1,0 +1,26 @@
+header {
+    color: #ccc;
+    background: #f2f2f2;
+    padding: 10px;
+}
+
+nav {
+    background: #f2f2f2;
+    padding: 10px;
+}
+
+footer {
+    background: #ccc;
+}
+
+article {
+    background: orange;
+}
+
+section {
+    border: 1px dotted #fff;
+}
+
+aside {
+    background: burlywood;
+}
