@@ -1,0 +1,315 @@
+para adicionar uma cor no fundo para visualização
+
+class="bg-success" cor verde
+class="bg-warning" cor amarela
+
+------------------------------------------------------
+Classes h1, h2, h3, h4, h5 & h6
+
+ao invés de se usar apenas h1 ou outras tags
+de cabeçalho também pode se usar uma class
+
+ex:
+<h3 class="h1">Titulo</h3>
+
+isso funcionara como se fosse um h1 normalmente
+
+----------------------------------------------------
+Classes display:
+
+class display ira dar maior destaque
+
+ex:
+<h1 class="display-1">display</h1>
+<div class="display-2">display</div>
+<span class="display-3">display</span>
+<p class="display-4">display</p>
+
+-----------------------------------------------------
+class lead :
+
+da um destaque um pouco melhor
+
+ex:
+<p class="lead">
+    aqui esta seu texto
+</p>
+
+-----------------------------------------------------
+class text-monospace:
+
+ira dar espaços iguais a todas as letras
+
+<p class="text-monospace">
+    seu texto aqui
+</p>
+
+-----------------------------------------------------
+Classes de estilo:
+
+ira aplicar estilos no texto 
+
+ex:
+<p class="font-weight-bold">Negrito</p>
+<h3 class="font-weight-normal">Normal</h3>
+<span class="font-italic">Itálico</span>
+
+-----------------------------------------------------
+transformações de texto:
+
+<p class="text-uppercase">Maiúscula</p>
+<p class="text-lowercase">Minúscula</p>
+<p class="text-capitalize"Primeira Maiúscula</p>
+
+-----------------------------------------------------
+Alinhamentos:
+
+<p class="text-right">Direita</p>
+<p class="text-left">Esquerda</p>
+<p class="text-center">Centro</p>
+
+-----------------------------------------------------
+Bloco de citação:
+
+blockquote-footer: formatação especial ao rodape
+
+<blockquote class="blockquote>
+    <p>citação</p>
+</blockquote>
+
+ex:
+
+<blockquote class="blockquote text-left">
+    <p>Lorem ipsum dolor sit amet, consectetur
+        adipiscing elit. Phasellus rutrum leo a
+        tortor scelerisque commodo. Etiam dignissim,
+        nunc ut dictum euismod, lorem ligula vehicula
+        quam, ultricies vulputate mauris ante eu sem.
+        Sed dictum, lectus et facilisis mollis,
+        metus libero fringilla nibh, in ullamcorper 
+        diam felis at elit. Nulla facilisi.
+        Etiam hendrerit nisl et dolor volutpat,
+        sed scelerisque nulla bibendum. Morbi
+    </p>
+    <footer class="blockquote-footer">
+        <cite>Pedro Lima</cite>
+    </footer>
+</blockquote>
+
+--------------------------------------------------------
+class truncate:
+
+<p class="text-truncate">     
+        Lorem ipsum dolor sit amet, consectetur
+        adipiscing elit. Phasellus rutrum leo a
+        tortor scelerisque commodo. Etiam dignissim,
+        nunc ut dictum euismod, lorem ligula vehicula
+        quam, ultricies vulputate mauris ante eu sem.
+        Sed dictum, lectus et facilisis mollis,
+        metus libero fringilla nibh, in ullamcorper 
+        diam felis at elit. Nulla facilisi.
+        Etiam hendrerit nisl et dolor volutpat,
+        sed scelerisque nulla bibendum. Morbi
+</p>
+
+-------------------------------------------------------
+listas sem estilo:
+
+<ul class="list-unstyled">
+    <li>Item 1</li>
+    <li>Item 2</li>
+</ul>
+
+------------------------------------------------------
+listas inline:
+
+<ul class="list-inline">
+    <li class="list-inline-item">Item 1</li>
+    <li class="list-inline-item">Item 2</li>
+    <li class="list-inline-item">Item 3</li>
+</ul>
+
+-------------------------------------------------------
+Alinhamento de textos:
+
+paragrafo justificado:
+
+<p class="text-justify">     
+        Lorem ipsum dolor sit amet, consectetur
+        adipiscing elit. Phasellus rutrum leo a
+        tortor scelerisque commodo. Etiam dignissim,
+        nunc ut dictum euismod, lorem ligula vehicula
+        quam, ultricies vulputate mauris ante eu sem.
+        Sed dictum, lectus et facilisis mollis,
+        metus libero fringilla nibh, in ullamcorper 
+        diam felis at elit. Nulla facilisi.
+        Etiam hendrerit nisl et dolor volutpat,
+        sed scelerisque nulla bibendum. Morbi
+</p>
+
+-------------------------------------------------------
+Alinhamento responsivo:
+
+text-(tela)-(Alinhamento)
+
+tela: sm, md, lg, xl
+Alinhamento:left, center, right
+
+<p>tela &gt; 576px</p> (small)
+<p>tela &gt; 768px</p> (medium)
+<p>tela &gt; 992px</p> (large)
+<p>tela &gt; 1200px</p> (extra large)
+
+<p class="text-sm-right>EXEMPLO DE USO</p>
+
+-------------------------------------------------------
+Elemento Block para inline:
+
+<h1 class="d-inline">exemplo de titulo</h1>
+
+-------------------------------------------------------
+Elemento inline para Block:
+
+<span class="d-bock">Exemplo de texto</span>
+
+-------------------------------------------------------
+Elementos inline-block:
+
+<h3 class="d-inline-block">Exemplo de titulo</h3>
+
+-------------------------------------------------------
+Elementos flutuantes:
+
+clearfix ira corrigir como se fosse o clear: both;
+
+<div class="clearfix">
+    <div class="float-left">Float left</div>
+    <div class="float-right">Float right</div>
+</div>
+
+------------------------------------------------------
+posicionamento fixo: top e bottom
+
+<h1 class="fixed-top">teste</h1>
+
+<h1 class="fixed-bottom">teste</h1>
+
+------------------------------------------------------
+float responsivo:
+
+float-(tela)-(direção)
+tela: sm, md, lg, xl
+direção: left, right
+
+<div class="float-768-right"> tela </div>
+
+------------------------------------------------------
+colar no topo (sticky)
+
+sticky ira colar o item selecionado
+no exemplo a baixo iria ser feita a movimentação
+até  chegada ao topo e após seria colado ao topo
+a ul (lembra o efeito fixed) (apenas sticky-top)
+
+<ul class="list-inline sticky-top">
+    <li class="list-inline-item"> Item 01</li>
+    <li class="list-inline-item"> Item 02</li>
+    <li class="list-inline-item"> Item 03</li>
+</ul>
+
+------------------------------------------------------
+class para formatação de textos (apoio de background)
+pode ser usa-da em links
+
+<h1 class="text-primary">texto primary</h1>       cor: azul
+<h1 class="text-secondary">texto secondary</h1>   cor: cinza
+<h1 class="text-success">texto success</h1>       cor: verde
+<h1 class="text-info">texto info</h1>             cor: azul claro
+<h1 class="text-warning">texto warning</h1>       cor: amarelo
+<h1 class="text-danger">texto danger</h1>         cor: vermelho
+<h1 class="text-light">texto light</h1>            cor: cinza muito claro
+<h1 class="text-dark">texto dark</h1>             cor: preto
+<h1 class="text-white">texto white</h1>           cor: branco
+<h1 class="text-black-50">texto black 50</h1>     cor: preto com 50% de opacidade
+<h1 class="text-white-50">texto white-50</h1>     cor: branco com 50% de opacidade
+
+------------------------------------------------------
+para uso em background:
+
+<div class="bg-primary">background primary</div>       cor: azul
+<div class="bg-secondary">background secondary</div>   cor: cinza
+<div class="bg-success">background success</div>       cor: verde
+<div class="bg-info">background info</div>             cor: azul claro
+<div class="bg-warning">background warning</div>       cor: amarelo
+<div class="bg-danger">background danger</div>         cor: vermelho
+<div class="bg-light">background light</div>            cor: cinza muito claro
+<div class="bg-dark">background dark</div>             cor: preto
+<div class="bg-white">background white</div>           cor: branco
+<div class="bg-transparent">background trasnparente</div>     cor: trasnparente
+
+-------------------------------------------------------
+margin:
+
+aplicação:
+
+mt - Margin top
+mb - Margin bottom
+ml - Margin left
+mr - Margin right
+mx - Margin no eixo x (horizontal) Esquerda > Direita (funcionamento parecido com margin auto)
+my - Margin no eixo y (vertical) Top > Bottom (funcionamento parecido com margin auto)
+m  - Margin em todos os lados
+
+Valor definir (0 até 5)
+
+<h1 class="mb-0">margin</h1>
+<p class=" mt-5">conteudo</p>
+
+------------------------------------------------------------
+padding:
+
+aplicação:
+
+pt - Padding top
+pb - Padding bottom
+pl - Padding left
+pr - Padding right
+px - Padding (horizontal)
+py - Padding (vertical)
+p  - Padding em todos os lados
+Valor definir (0 até 5)
+
+------------------------------------------------------------
+Classes de largura:
+
+<div class="w-25"> width 25%</div>      ocupa 25% do espaço total
+<div class="w-50"> width 50%</div>      ocupa 50% do espaço total
+<div class="w-75"> width 75%</div>      ocupa 75% do espaço total
+<div class="w-100"> width 100%</div>    ocupa 100% do espaço total
+<div class="w-auto"> width auto</div>   ocupa automaticamente o espaço disponivel
+
+------------------------------------------------------------
+Classes de altura:
+
+<div class="h-25"> height 25%</div>      ocupa 25% do espaço total
+<div class="h-50"> height 50%</div>      ocupa 50% do espaço total
+<div class="h-75"> height 75%</div>      ocupa 75% do espaço total
+<div class="h-100"> height 100%</div>    ocupa 100% do espaço total
+<div class="h-auto"> height auto</div>   ocupa automaticamente o espaço disponivel
+
+--------------------------------------------------------------
+Bordas:
+
+border        - todas as Bordas
+border-top    - borda superior
+border-bottom - borda inferior
+border-right  - borda direita
+border-left   - borda esquerda
+
+cores:
+
+border-: primary, secondary, success, info, warning, danger
+light, dark, white
+
+radius:
+rounded, rounded-top, rounded-right, rounded-left & rounded-circle
