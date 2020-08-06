@@ -5,7 +5,7 @@
 Curso WEB Completo
 
 
-![Imagem](_foto.jpg)
+![Imagem](foto.jpg)
 * [x] Html 5
 * [x] Css 3
 * [x] Css 3 (Intermediario/Avançado)
