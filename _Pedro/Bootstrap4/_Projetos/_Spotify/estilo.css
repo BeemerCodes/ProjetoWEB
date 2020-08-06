@@ -86,6 +86,10 @@ nav.navbar-transparente {
     text-align: center;
 }
 
+.carousel-control-next, .carousel-control-prev {
+    width: 5%;
+}
+
 .btn-custom {
     color: white;
     border-radius: 500px;
@@ -118,6 +122,26 @@ nav.navbar-transparente {
     transition: background 0.4s, color 0.4s;
     background: #ffffff7a;
 }
+
+.btn-custom3 {
+    color: rgb(31, 31, 31);
+    border-radius: 500px;
+    -webkit-border-radius: 500px;
+    -moz-border-radius: 500px;
+    text-transform: uppercase;
+    transition: background 0.4s, color 0.4s;
+    padding: 10px 20px;
+    border: 1px solid white;
+    background: white;
+}
+
+.btn-custom3:hover {
+    transition: background 0.4s, color 0.4s;
+    color: black;
+    background: rgba(253, 253, 253, 0.767);
+}
+
+
 
 #servicos {
     background: white;
@@ -204,3 +228,4 @@ footer ul li {
     float: right;
     margin: 0px 5px;
 }
+

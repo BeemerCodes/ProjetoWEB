@@ -10,7 +10,7 @@ Curso WEB Completo
 * [x] Css 3
 * [x] Css 3 (Intermediario/Avançado)
 * [x] Html e Css (Recursos Especiais)
-* [ ] Bootstrap & Design responsivo
+* [x] Bootstrap & Design responsivo
 * [ ] JavaScript
 * [ ] Javacript Moderno (ECMA Script & ES6) & Orientação a Objetos
 * [ ] Iniciando Servidor Apache Php & MySlq
