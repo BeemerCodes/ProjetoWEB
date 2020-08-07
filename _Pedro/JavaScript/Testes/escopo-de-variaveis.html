@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+    <link rel="shortcut icon" href="javascript.svg">
+
+    <script>
+/// 3 escopos: global, função e bloco, variáveis declaradas em bloco sofrem elevação (hoisting), variáveis de função não
+
+        var serie = 'Friends'
+
+        if (true) {
+            document.write(serie)
+        }
+            document.write('</br>')
+        function x(serie2) {
+            var serie2 = 'Thor'
+            document.write(serie2)
+        }
+        x()
+
+    </script>
+
+</head>
+
+<body>
+
+
+
+</body>
+
+</html>

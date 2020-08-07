@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+    <link rel="shortcut icon" href="javascript.svg">
+
+    <script>
+
+        var data1 = new Date(2017, 0, 15)
+        var data2 = new Date(2017, 1, 23)
+        var mili_entre_datas = Math.abs(data1.getTime()-data2.getTime())
+        document.write(mili_entre_datas)
+
+        document.write(data1.toString())
+        document.write('<hr><br>')
+        document.write(data2.toString())
+
+        //conversão de datas
+
+        document.write('<hr><br>')
+        document.write(data1.getTime())
+        document.write('<hr><br>')
+        document.write(data2.getTime())
+        document.write('<hr><br>')
+
+        //encontrar a quantidade de milissegundos
+
+        document.write(Math.abs(data1.getTime()-data2.getTime())) // Math.abs transforma em um alor absoluto
+
+        // um dia tem 24 hrs, cada hr 60 mnts cada mnt 1000 milissegundos
+        var mili_por_dia = (1*24*60*60*1000)
+        document.write('<hr><br>')
+        document.write('Um dia tem: '+mili_por_dia+' Milissegundos')
+        document.write('<hr><br>')
+        document.write('A diferença entre as datas são de '+Math.ceil(mili_entre_datas/mili_por_dia)+' dias!')
+        
+
+
+
+
+
+
+
+/*
+        var data = new Date()
+
+        document.write(data.toString())//mostra a data 
+        data.setDate(data.getDate()+1)// adiciona um dia a data
+        document.write('<hr>')
+
+        document.write(data.toString())
+        document.write('<hr>')
+
+        data.setMonth(data.getMonth()+1)
+        document.write(data.toString())
+        document.write('<hr>')
+
+        data.setFullYear(data.getFullYear()+1)
+        document.write(data.toString())
+        document.write('<hr>')
+
+        data.setHours(data.getHours()+1)
+        document.write(data.toString())
+*/
+    </script>
+
+</head>
+
+<body>
+
+
+
+</body>
+
+</html>

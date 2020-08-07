@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+    <link rel="shortcut icon" href="javascript.svg">
+
+    <script>
+
+        function exibirArtigo(id, callbackSucesso, callbackErro) {
+            if (true) {
+                callbackSucesso('Funções de callback em js')
+            }else {
+                callbackErro('Erro ao recuperar dados')
+            }
+        }
+
+        var callbackSucesso = function(titulo, descricao) {
+            document.write('<h1>'+titulo+'</h1>')
+            document.write('<hr>')
+            document.write('<p>'+descricao+'</p>')
+        }
+
+        var callbackErro = function(erro) {
+            document.write('<h1><b>Erro:</b>'+erro+'</h1>')
+        }
+        exibirArtigo(1, callbackSucesso, callbackErro)
+
+    </script>
+
+</head>
+
+<body>
+
+
+
+</body>
+
+</html>

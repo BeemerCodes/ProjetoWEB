@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+    <script>
+
+        var num1 = prompt('Qual o primeiro valor: ')
+        var num2 = prompt('Qual o outro valor: ')
+        var tipo = prompt('Digite: + para adição ou - para subtração: ')
+        var valorFinal = null
+        num1 = Number(num1)
+        num2 = Number(num2)
+
+        if (tipo == '+') {
+            var valorFinal = num1+num2
+        }else {
+            var valorFinal = num1-num2
+        }
+
+        document.write('O resultado das somas entre '+num1+' e '+num2+' é '+valorFinal)
+        
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

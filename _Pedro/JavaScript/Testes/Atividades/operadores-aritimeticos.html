@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+    <link rel="shortcut icon" href="javascript.svg">
+
+    <script>
+
+        var nome = prompt('Digite seu nome: ')
+        var altura = prompt('Qua a sua altura em cm: ')
+        var peso = prompt('Qual seu peso?: ')
+        var massa = 0
+        var $nivel = null
+
+        var altura = Number(altura)
+        var peso = Number(peso)
+        var altura = altura/100
+        var massa = peso / (altura*altura)
+        
+        if (massa < 16) {
+            $nivel = ('Baixo peso muito grave')
+                }
+
+                else if (massa >= 16 && massa < 16.99) {
+                    $nivel = ('Baixo peso grave')
+                }
+
+                else if (massa >= 17 && massa <= 18.49) {
+                    $nivel = ('Baixo peso')
+                }
+
+                else if (massa >= 18.50 && massa <= 24.99) {
+                    $nivel = ('Peso normal')
+                }
+
+                else if (massa >= 25 && massa <= 29.99) {
+                    $nivel = ('Sobrepeso')
+                }
+
+                else if (massa >= 30 && massa <= 34.99) {
+                    $nivel = ('Obesidade grau I')
+                }
+
+                else if (massa >= 35 && massa <= 39.99) {
+                    $nivel = ('Obesidade grau II')
+                }
+
+        else {
+            $nivel = ('Obesidade grau III')
+        }
+
+        document.write('<h1>' + nome +' possui o indice de massa corporal igual a '+massa+' sendo classificado como: ' +$nivel+'</h1>')
+
+
+
+    </script>
+
+</head>
+
+<body>
+
+
+
+</body>
+
+</html>
