@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+
+    <script>
+        
+        function backgroundFocus() {
+            document.getElementById('input-area').className = 'focado'
+        }
+
+        function backgroundBlur() {
+            document.getElementById('input-area').className = 'blur'
+            var caracter = document.getElementById('input-area').value
+            document.getElementById('input-area').value = ''
+            var quantidade = caracter.length
+            var quantidade = Number(quantidade)
+            
+            if (quantidade <= 3) {
+                document.getElementById('input-area').className = 'blur1'
+            }else {
+                document.getElementById('input-area').className = 'blur2'
+            }
+
+        }
+
+        
+
+    </script>
+
+    <style>
+        .normal {
+            background: white;
+            width: 500px;
+            height: 200px;
+            padding: 10px;
+            border: 2px solid black;
+        }
+        .focado {
+            background: rgb(255, 255, 63);
+            width: 500px;
+            height: 200px;
+            padding: 10px;
+            border: 2px solid black;
+        }
+
+        .blur1 {
+            background: rgb(185, 3, 3);
+            width: 500px;
+            height: 200px;
+            padding: 10px;  
+            border: 2px solid black;
+        }
+
+        .blur2 {
+            background: rgb(19, 144, 19);
+            width: 500px;
+            height: 200px;
+            padding: 10px;
+            border: 2px solid black;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <input onfocus="backgroundFocus()" onblur="backgroundBlur()" type="text" id="input-area" class="normal">
+    
+</body>
+
+</html>

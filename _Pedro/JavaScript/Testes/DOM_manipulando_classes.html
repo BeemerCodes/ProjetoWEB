@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+    <link rel="shortcut icon" href="javascript.svg">
+
+    <script>
+
+       function mudaClass () {
+           document.getElementById('mensagem').className = 'estilo2'
+       }
+
+    </script>
+
+    <style>
+        .estilo1 {
+            background: rgb(146, 0, 0);
+            color: white;
+        }
+
+        .estilo2 {
+            padding: 10px;
+            background: rgb(0, 144, 163);
+            color: rgb(255, 255, 255);
+            font-size: 1.1em;
+        }
+    </style>
+
+
+</head>
+
+<body>
+
+    <div id="mensagem" class="estilo1">
+        Mudando a classe
+    </div>
+
+    <hr>
+
+    <button onclick="mudaClass()">
+        Aplicar classe
+    </button>
+
+</body>
+
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+    <link rel="shortcut icon" href="javascript.svg">
+
+    <script>
+
+        function distribui () {
+           var caracter = document.getElementById('entrada').value
+           document.getElementById('entrada').value = ''
+           console.log(caracter)
+
+           caracter.trim()
+
+           switch(caracter) {
+               case '0':
+               case '1':
+               case '2':
+               case '3':
+               case '4':
+               case '5':
+               case '6':
+               case '7':
+               case '8':
+               case '9':
+                   document.getElementById('numeros').value += caracter
+                   break;
+                default:
+                    document.getElementById('letras').value += caracter
+           }
+        }
+
+    </script>
+
+</head>
+
+<body>
+
+    <input 
+    onkeyup="distribui()" 
+    type="text" 
+    placeholder="Digite um carácter aqui" 
+    id="entrada">
+
+    <hr>
+
+    <span>Letras: </span>
+    <input type="text"  disabled name="" id="letras">
+
+    <span>Numeros: </span>
+    <input type="text" disabled name="" id="numeros">
+
+</body>
+
+</html>

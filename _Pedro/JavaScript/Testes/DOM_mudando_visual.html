@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+    <link rel="shortcut icon" href="javascript.svg">
+
+    <script>
+
+        function modificaEstilo (corDeFundo) {
+            document.getElementById('divisao').style.background = corDeFundo
+        }
+
+    </script>
+
+    <style>
+        @keyframes anim {
+            0% {
+                color: black;
+            }
+
+            10% {
+                color: rgb(255, 0, 0);
+            }
+
+            20% {
+                color: rgb(102, 255, 0);
+            }
+
+            30% {
+                color: rgb(0, 255, 234);
+            }
+
+            40% {
+                color: rgb(162, 0, 255);
+            }
+
+            50% {
+                color: rgb(255, 0, 157);
+            }
+
+            60% {
+                color: rgb(0, 255, 106);
+            }
+
+            70% {
+                color: rgb(255, 88, 88);
+            }
+
+            80% {
+                color: rgb(10, 132, 180);
+            }
+
+            90% {
+                color: rgb(71, 71, 71);
+            }
+
+            100% {
+                color: rgb(12, 12, 12);
+            }
+
+        }
+
+        h1 {
+            animation: anim 10s;
+            text-shadow: 1px 1px 1px black;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <h1>Manipulando Estilo!</h1>
+    <button onclick="modificaEstilo('#FF0000')">Vermelho</button>
+    <button onclick="modificaEstilo('#00FF00')">Verde</button>
+    <button onclick="modificaEstilo('#0000FF')">azul</button>
+    <hr>
+
+    <div id="divisao" style="width: 100%; border-top: 1px solid rgb(109, 107, 107); height: 400px; margin: 10px 0px; background: rgb(212, 212, 212);">
+
+    </div>
+
+</body>
+
+</html>
