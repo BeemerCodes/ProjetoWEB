@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body, html {
+            width: 100%;
+            height: 100%;
+        }
+
+        body {
+            background: rgb(8, 86, 110);
+        }
+
+        h2 {
+            color: rgb(148, 148, 148);
+        }
+
+        .entrada {
+            background: rgb(65, 65, 65);
+            color: white;
+            padding: 20px;
+        }
+
+        .btn {
+            padding: 20px;
+            background-color: rgb(122, 122, 122);
+            color: white;
+        }
+
+        .btn:hover {
+            background: rgb(95, 95, 95);
+        }
+    </style>
+</head>
+<body>
+    <h2>Adicione um item, use a primeira letra maiúscula!</h2>
+    <input type="text" name="entrada" id="entrada" class="entrada">
+    <button onclick="recuperar()" id="adicionar" class="btn">adicionar</button>
+    <button onclick="ordenar()" id="ordenar" class="btn">Ordenar</button>
+
+    <script>
+
+        var objetos = Array()
+
+        objetos[0] = 'Cadeira'
+        objetos[1] = 'Impressora'
+        objetos[2] = 'Garfo'
+
+        function recuperar() {
+            var dados = document.getElementById('entrada').value 
+
+            if (dados == '') {
+                alert('Informe um valor valido!')
+
+            }else{
+
+                if (objetos.indexOf(dados) == -1) {
+                    objetos.push(dados)
+                    console.log(objetos)
+                }else{
+                    alert('Item ja adicionado!')
+                
+                }
+            }
+            var dados = document.getElementById('entrada').value = ''
+        }
+
+        function ordenar() {
+            console.log(objetos.sort())
+        }
+
+    </script>
+
+</body>
+</html>
