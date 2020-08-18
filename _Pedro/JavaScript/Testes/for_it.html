@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+    <link rel="shortcut icon" href="javascript.svg">
+
+    <script>
+
+        var lista_funcionários = Array('viviae', 'miguel', 'pedro', 'lucas', 'karen')
+/*
+        console.log(lista_funcionários)
+
+        lista_funcionários.forEach(function(valor, indice, Array){
+            console.log('indice ' +indice+ ' | valor: '+valor)
+
+            if(valor == 'viviae'){
+                Array[indice] = 'viviane'
+            }
+        })
+        console.log(lista_funcionários)
+*/
+        var f = function(valor, indice) {
+            console.log(valor, indice)
+        }
+
+        lista_funcionários.forEach(f)
+
+    </script>       
+
+</head>
+<body>
+    
+</body>
+</html>
