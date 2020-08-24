@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Java Script</title>
+    <script>
+
+function exibirArtigo(id, callbackSucesso, callbackErro) {
+     //recuperar id via requisicao http
+     if(true) {
+         callbackSucesso('Funcoes de callback em JS', 'Funcoes de callback sao muito utilizadas');
+     } else {
+         callbackErro('Erro ao recuperar os dados');
+     }
+}
+
+   var callbackSucesso = function(titulo, descricao) {
+           document.write('<h1>' + titulo + '</h1>');
+           document.write('</hr>');
+           document.write('<p>' + descricao + '</p>');
+   }
+
+   var callbackErro = function() {
+    document.write('<p><br>Erro:</br>' + erro + '<>');}
+
+    exibirArtigo(1, callbackSucesso, callbackErro)
+
+    </script>
+</head>
+<body>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Java Script</title>
+ <style>
+.padrao {
+    width: 400px;
+    height: 100px;
+}
+
+.caixa1, .caixa2, .caixa3 {
+  width: 400px;
+  height: 100px;
+}
+.caixa1 {
+    background: yellow;
+}
+
+.caixa2 {
+    background: #ff0000;
+}
+.caixa3 {
+   background: green;
+}
+ </style>
+    <script>
+
+function modificaFundo() {
+document.getElementById('modificando').className = 'caixa1'
+}
+function modificaCaixa() {
+
+var caracter = document.getElementById('modificando').value
+ var quantidade = caracter.length
+ quantidade = Number(quantidade)
+
+    if (caracter.length <= 3) {
+       caracter = document.getElementById('modificando').className = 'caixa2'
+    } else if(caracter.length >= 3) {
+       caracter= document.getElementById('modificando').className = 'caixa3'
+    }
+    return caracter
+}
+
+    </script>
+</head>
+
+<body>
+
+<input type="text" class="padrao" id="modificando" onblur="modificaCaixa()" onfocus="modificaFundo()">
+
+</body>
+</html>
+

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Java Script</title>
+    <script>
+
+// && todas as comparacoes precisam ser verdadeiras
+// || precisa que qualquer expressao seja verdadeira
+// ! nega a expressao, dessa forma invertendo a logica
+
+/*
+if( !(4 == 2)) {
+      document.write('Verdadeiro');
+}
+*/
+
+var nota = prompt('Digite a nota do aluno:');
+var faltas = prompt('Digite a quantidade de faltas:');
+
+var media = 7;
+var faltas_maximas = 15;
+
+  /*if (nota >= media && faltas <= faltas_maximas) {
+           document.write('Aprovado');
+  } else {
+    document.write('Reprovado');
+  }*/
+
+
+  //var resultado = <condicao> ? <verdadeiro> : <falso>
+
+    var resultado = (nota >= media && faltas <= faltas_maximas) ? 'Aprovado' : 'Reprovado';
+    document.write(resultado);
+
+
+
+</script>
+</head>
+<body>
+</body>
+
+
