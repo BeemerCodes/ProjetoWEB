@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Java Script</title>
+    <script>
+    
+    var num1 = prompt('Digite um numero');
+    var sinal = prompt('Digite subtracao ou adicao');
+    var num2 = prompt('Digite outro numero');
+
+
+function calculo(num1, sinal, num2){
+
+    num1 = parseInt(num1);
+    num2 = parseInt(num2);
+
+  resultado = 0;
+
+if (sinal == 'subtracao') {
+     resultado = num1 - num2;
+} else if(sinal == 'adicao') {
+    resultado = num1 + num2;
+}
+
+ return resultado
+}
+
+
+document.write('O resultado é: ' + calculo(num1, sinal, num2));
+
+     
+    </script>
+</head>
+<body>
+</body>
+</html>

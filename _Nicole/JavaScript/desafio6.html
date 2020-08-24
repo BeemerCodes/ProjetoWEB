@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Java Script</title>
+
+</head>
+
+<body>
+    <input id="adicionar" type="text">
+    <button id="primeiroBotao" onclick="recuperar()" type="button">Adicionar</button>
+    <button id="segundoBotao" onclick="ordenar()" type="button">Ordenar</button>
+
+
+    <script>
+
+        var objetos = []
+
+        objetos[0] = 'Cadeira'
+        objetos[1] = 'Impressora'
+        objetos[2] = 'Garfo'
+
+
+
+        function recuperar() {
+
+            var valor = document.getElementById('adicionar').value
+
+            if (valor == '') {     //para selecionar valor vazio
+                alert('Digite um valor valido')
+            } else {
+                if ((objetos.indexOf(valor)) == -1) { // se o valor digitado no input
+                    objetos.push(valor)              // nao estiver na lista fazer o push (-1 seria para um objeto que nao existe na lista)
+                    console.log(objetos)             // e mostrar no terminal
+                } else {
+                    alert('Ja incluido')                   //caso o objeto ja esteja incluido
+                }
+            } valor = document.getElementById('adicionar').value = ''  // limpa a caixa de input
+        }
+
+        function ordenar() {
+            console.log(objetos.sort())   //organiza a lista por ordem alfabetica e mostra no terminal
+        }
+
+
+    </script>
+</body>
+
+</html>

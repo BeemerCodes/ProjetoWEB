@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Java Script</title>
+    <script>
+ 
+     var nome = prompt('Digite o seu nome');
+     var altura = prompt('Digite a sua altura');
+     var peso = prompt('Digite a seu peso');
+    
+    altura = Number(altura);
+    peso = Number(peso);
+
+    altura = altura  / 100;
+
+var massa = peso / (altura * altura);
+
+if(massa < 16) {
+       document.write(nome + ' voce esta com baixo peso muito grave');
+} else if(massa >= 16 && massa <= 16.99) {
+      document.write(nome + ' voce esta com baixo peso grave');
+} else if(massa >= 17 && massa <= 18.49) {
+    document.write(nome + ' voce esta com baixo peso');
+} else if(massa >= 18,50 && massa <= 24.99) {
+    document.write(nome + ' voce esta com o peso normal');
+} else if(massa >= 25 && massa <= 29.99) {
+    document.write(nome + ' voce esta com sobrepeso');
+} else if(massa >= 30 && massa <= 34.99){
+   document.write(nome + ' voce esta com obesidade I');
+} else if(massa >= 30 && massa <= 39.99){
+    document.write(nome + ' voce esta com obesidade II');
+} else {
+   
+}
+     
+    </script>
+</head>
+<body>
+</body>
+</html>
