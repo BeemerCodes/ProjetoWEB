@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Javascript</title>
+
+  <script>
+    
+    var video = Array()
+
+    video[1] = Array()
+    video[1]['nome'] = 'Tokyo Ghoul'
+    video[1]['categoria'] = 'Anime' 
+
+    function GetVideo(video) {
+
+      try {
+        console.log(video[0]['Anime'])
+      } 
+      
+      catch(erro) {
+        console.log('Tratamento')
+      }
+
+      finally {
+        console.log('Passou!')
+      }
+
+    }
+
+    GetVideo(video)
+
+    throw new Error('Consumo de memória excessivo!')
+  </script>
+
+</head>
+
+<body>
+</body>
+
+</html>
