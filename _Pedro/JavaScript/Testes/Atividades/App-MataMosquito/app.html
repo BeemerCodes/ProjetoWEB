@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+
+  <!-- Estilo CSS Opcional -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Js Opcional -->
+  <script src="jogo.js"></script>
+
+  <link rel="shortcut icon" href="imagens/mosquito 2.svg">
+  <title>Mata Mosquito</title>
+</head>
+
+<body onresize="ajustaTamanhoPalcoJogo()">
+
+  <audio autoplay loop>
+
+    <source src="8bit2.ogg" type="audio/ogg">
+    <source src="8bit2.mp3" type='audio/mp3'>
+
+    <p>Erro: Não foi possível carregar a musica de fundo</p>
+  </audio>
+
+  <div class="painel">
+
+    <div class="vida">
+
+      <img id="v1" src="imagens/coracao_cheio.png" alt="coracao_vazio">
+      <img id="v2" src="imagens/coracao_cheio.png" alt="coracao_vazio">
+      <img id="v3" src="imagens/coracao_cheio.png" alt="coracao_vazio">
+
+    </div>
+
+    <div class="cronometro">
+      <p>Tempo Restante: <span id="cronometro"></span></p>
+    </div>
+  </div>
+
+  <!-- Optional JavaScript -->
+
+  <script>
+
+    document.getElementById('cronometro').innerHTML = tempo
+
+    var criaMosca = setInterval(function() { posicaoRandomica() }, criaMosquitoTempo)
+
+
+  </script>
+
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+  </script>
+  <script src="js/bootstrap.min.js"></script>
+
+</body>
+
+</html>

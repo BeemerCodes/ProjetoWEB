@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="_fontawesome/css/all.min.css">
+
+  <!-- Estilo CSS Opcional -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Js Opcional -->
+
+  <script>
+
+    function iniciarJogo() {
+      var nivel = document.getElementById('nivel').value
+
+      if (nivel === '') {
+        alert('Selecione um nivel para iniciar')
+        return false
+      }
+
+      window.location.href = "app.html?"+nivel
+    }
+
+  </script>
+
+  <link rel="shortcut icon" href="imagens/mosquito 2.svg">
+  <title>Mata Mosquito</title>
+
+
+</head>
+
+<body>
+
+    <audio autoplay loop>
+
+      <source src="8bit.ogg" type="audio/ogg">
+      <source src="8bit.mp3" type='audio/mp3'>
+
+      <p>Erro: Não foi possível carregar a musica de fundo</p>
+    </audio>
+
+  <div class="container">
+    <div class="row">
+
+      <div class="col">
+        <div class="d-flex justify-content-center">
+          <img src="imagens/game.png" alt="game">
+        </div>
+      </div>
+
+    </div>
+
+    <div class="row">
+      <div class="col">
+        <div class="d-flex justify-content-center">
+          
+          <div class="mb-2">
+
+            <select class="form-control" id="nivel">
+              <option value="">-- Selecione um Nivel --</option>
+              <option value="facil">Fácil</option>
+              <option value="medio">Médio</option>
+              <option value="dificil">Difícil</option>
+              <option value="diabo">Chuck Norris Mode</option>
+            </select>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col">
+        <div class="d-flex justify-content-center">
+          <button onclick="iniciarJogo()"
+            class="btn btn-danger p-3 font-weight-bolder font text-uppercase">Iniciar Jogo
+            <i class="fas fa-play-circle pl-1"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Optional JavaScript -->
+
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+  </script>
+  <script src="js/bootstrap.min.js"></script>
+
+</body>
+
+</html>

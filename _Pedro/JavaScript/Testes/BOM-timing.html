@@ -13,13 +13,13 @@
    
     var life = 10
 
-    setInterval(function()
+    var x = setInterval(function()
      { document.write(life+'<br>')
      
      life--
      
      if(life === 0) {
-       window.location.reload()
+       clearInterval(x)
      }
     
     }, 600)
