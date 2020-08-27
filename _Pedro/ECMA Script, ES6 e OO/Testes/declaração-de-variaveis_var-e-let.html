@@ -13,9 +13,32 @@
   <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
 
   <script type="text/babel">
-    const getMessage = () => "Teste";
-      document.getElementById('output').innerHTML = getMessage();
-    </script>
+
+    // NOTE  3 escopos: global, função e bloco
+    // NOTE  escopos de função são isolados
+    // NOTE  escopos de bloco sofrem hoisting
+    // NOTE  let não sofrem hoisting
+
+    function x () {
+      if (true) {
+        console.log(serie);
+      }
+    }
+
+    if (true) {
+      var serie = '007 Apocalipse'
+    }
+
+      x()
+/*    var nome = 'pedrin'
+      if (true) {
+        let nome = 'testando'
+        console.log('Dentro do if: '+ nome);
+      }
+
+      console.log('Fora do if: '+ nome);
+*/
+  </script>
 
   <title>Padrão com Bootstrap e ES6</title>
   <link rel="shortcut icon" href="oo.svg">

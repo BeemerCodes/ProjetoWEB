@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+
+  <!-- Babel  -->
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+  <script type="text/babel">
+
+    class ContaBancaria {   // NOTE Modelo do objeto
+      // agência
+      // numero da conta
+      // saldo
+      // limite
+
+      constructor() {   // NOTE método automático para construção de objeto
+        this.agencia = 1075
+        this.numeroConta = 8351125     // NOTE case sensitive apenas a partir da segunda palavra
+        this.saldo = 50
+        this.limite = 450
+      }
+
+      depositar(valorDeposito) {
+        this.saldo += valorDeposito
+      }
+
+      sacar(valorSaque) {
+        this.saldo -= valorSaque
+      }
+
+      consultarSaldo() {
+        return this.saldo
+      }
+    }
+
+    let x = new ContaBancaria()  // NOTE  cria o objeto/instância, até o ponto de cima é apenas uma abstração
+    let y = new ContaBancaria()
+
+    console.log(`Valor antes do deposito: ${x.consultarSaldo()}`) // NOTE o ponto serve para acessar atributos e métodos dos objetos
+    x.depositar(450)
+    console.log(`Valor após o deposito: ${x.consultarSaldo()}`)
+    x.sacar(320)
+    console.log(`Valor após saque: ${x.consultarSaldo()}`)
+    
+    console.log(y.consultarSaldo()) // REVIEW conteudo inalterado
+    
+ </script>
+
+  <title>Padrão com Bootstrap e ES6</title>
+  <link rel="shortcut icon" href="oo.svg">
+
+</head>
+
+<body>
+
+  <div id="output"></div>
+
+  <!-- Optional JavaScript -->
+
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+  </script>
+
+  <script src="js/bootstrap.min.js"></script>
+
+</body>
+
+</html>

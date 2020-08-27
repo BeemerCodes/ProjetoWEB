@@ -13,13 +13,54 @@
   <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
 
   <script type="text/babel">
+
+    /*let quadrado = function (x = 2) {
+      return x * x
+    }*/
+
+    /*let quadrado = (x) => {
+      return x * x
+    }*/
+
+    // NOTE nesse caso pode-se retirar os parênteses pois ha apenas um único parâmetro, caso não aja ou aja mais, deve se utiliza-lo
+
+    /*let quadrado = x => {
+    return x * x
+    }*/
+ 
+    // NOTE como ha apenas uma instrução sendo executada pode ser feito desse modo
     
-    
+    //let quadrado = x => x * x // return implícito
+
+    //document.write(quadrado(3))
+
+    /*let parOuImpar = function(numero) {
+      if (numero % 2 === 0){
+        return 'Par'
+      }else {
+        return 'Impar'
+      }
+    }
+
+    document.write(parOuImpar(8))*/
+
+    /*let parOuImpar = numero => {
+      if (numero % 2 === 0){
+        return 'Par'
+      }
+      else {
+        return 'Impar'
+      }
+    }*/
+
+    let parOuImpar = numero => numero % 2 === 0 ? 'Par' : 'Impar' // retorno implícito
+
+    document.write(parOuImpar(8))
 
   </script>
 
   <title>Padrão com Bootstrap e ES6</title>
-  <link rel="shortcut icon" href="oo.svg">
+  <link rel="shortcut icon" href='oo.svg'>
 
 </head>
 

@@ -13,8 +13,22 @@
   <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
 
   <script type="text/babel">
+
+    let nome = prompt('Qual seu nome?')
     
-    
+    console.log(`oi ${nome}, Tudo bem?`);
+
+    console.log(`
+    oi ${nome}
+    Tudo bem?`);
+
+    console.log(`7 + 7 = ${7+7}`);
+
+    function calculo (a, b) {
+      return (a * b)
+    }
+
+    console.log(`A multiplicação de 8 x 8 é: ${calculo(7, 7)}`);
 
   </script>
 

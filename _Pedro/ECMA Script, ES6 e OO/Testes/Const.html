@@ -13,8 +13,19 @@
   <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
 
   <script type="text/babel">
-    
-    
+
+    // NOTE  const não pode receber um valo, apenas leitura
+
+    const SERIE = 'Um Maluco no Barraco'
+
+    function x() {
+      const SERIE = 'Dois Maluco no Barraco'
+      console.log(SERIE);
+    }
+
+    x()
+
+    console.log(SERIE);
 
   </script>
 

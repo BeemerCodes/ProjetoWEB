@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+
+  <!-- Babel  -->
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+  <script type="text/babel">
+
+    // SECTION software para marcenaria
+    // NOTE objetos: cadeira e sofá
+
+    // paradigma procedural
+
+    // NOTE cadeira
+    
+
+    /*
+
+    let cadeiras = Array()
+
+    cadeiras[0] = Array()
+    cadeiras[0]['num_pernas'] = 4
+    cadeiras[0]['giratoria'] = false
+    cadeiras[0]['cor'] = 'azul'
+
+    cadeiras[1] = Array()
+    cadeiras[1]['num_pernas'] = 1
+    cadeiras[1]['giratoria'] = true
+    cadeiras[1]['cor'] = 'verde'
+
+    function girarCadeira(indice) {
+      if(cadeiras [indice]['giratoria'] === true) {
+        console.log('Girou');
+      }else {
+        console.log('Cadeira não giratoria');
+      }
+    }
+
+    function adicionarCadeira(num_pernas, giratoria, cor) {
+      let cadeira = Array()
+
+      cadeira['num_pernas'] = num_pernas
+      cadeira['giratoria'] = giratoria
+      cadeira['cor'] = cor 
+
+      cadeiras.push(cadeira)
+    }
+
+    adicionarCadeira(3, false, 'vermelho')
+
+    console.log(cadeiras);  */
+
+    // SECTION paradigma OO
+
+    class Cadeira {
+      constructor(num_pernas, giratoria, cor) {  // NOTE variáveis com this são variáveis do objeto e variáveis sem, escopo da função, por isso não se conflitam com vaiáveis do escopo global
+        this.num_pernas = num_pernas
+        this.giratoria = giratoria
+        this.cor = cor
+      }
+
+      girarCadeira() {
+        if(this.giratoria === true) {
+          console.log('Gira');
+        } else {
+          console.log('Não gira');
+        }
+      }
+    }
+
+    class Sofa {
+      constructor(lugares, curva, cor) {
+        this.lugares = lugares
+        this.curva = curva
+        this.cor = cor
+      }
+
+      temCurva() {
+        if (this.curva === true) {
+          console.log('Com curva');
+        } else {
+          console.log('Sem curva');
+        }
+      }
+    }
+
+    let sofa = new Sofa(4, false, 'cinza')
+    let sofa2 = new Sofa(8, true, 'violeta')
+    let sofa3 = new Sofa(5, false, 'branco')
+
+    console.log(sofa);
+    console.log(sofa2);
+    console.log(sofa3);
+
+    sofa.temCurva()
+    sofa2.temCurva()
+    sofa3.temCurva()
+
+  /*let cadeira = new Cadeira(3, false, 'vermelho')
+    let cadeira2 = new Cadeira(1, true, 'preto')*/
+
+    let cadeiras = Array()
+
+    cadeiras.push(new Cadeira(4, false, 'preto'))
+    cadeiras.push(new Cadeira(1, true, 'vermelho'))
+
+    console.log(cadeiras);
+
+  </script>
+
+  <title>Padrão com Bootstrap e ES6</title>
+  <link rel="shortcut icon" href="oo.svg">
+
+</head>
+
+<body>
+
+  <div id="output"></div>
+
+  <!-- Optional JavaScript -->
+
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+  </script>
+
+  <script src="js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
