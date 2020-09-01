@@ -14,49 +14,34 @@
 
   <script type="text/babel">
 
-    // REVIEW o operador super da acesso ao método constructor do pai
+    //SECTION spread
 
-    class Animal {
-      constructor(bico) {
-        this.cor = null
-        this.tamanho = null
-        this.bico = bico
+    let tituloArtigo = 'como utilizar rest/spread'
+
+    console.log(...tituloArtigo); // NOTE espalhou a string
+
+    // array
+
+    let listaCursos1 = ['NodeJS e MongoDB', 'ES6, TypeScript e Angular 6']
+    let listaCursos2 = ['Multiplataforma Android/IOS', 'Introdução ao GNU/Linux']
+    let listaCursosCompleto = ['Web Completo', 'Mobile Completo',...listaCursos1, ...listaCursos2]
+
+    console.log(listaCursosCompleto);
+
+    // objects
+
+    let pessoa = {
+      nome: 'pedro',
+      idade: 20
     }
 
-    dormir() {
-      console.log('dormir');
+    let clone = {
+      endereco: 'rua abc',
+      ...pessoa
     }
 
-    voar() {
-      console.log('voar');
-    }
+    console.log(clone);
 
-    }
-
-
-    class Passaro extends Animal {
-      constructor(tamanho) {
-        super('Médio')
-    }
-
-    }
-
-    class Papagaio extends Passaro { // REVIEW herança de passaro em cascata
-      constructor(sabeFalar) {
-        super()
-        this.fala = sabeFalar
-    }
-
-    falar() {
-      console.log('curupacu');
-    }
-
-    }
-
-    let papagaio = new Papagaio(true)
-
-    console.log(papagaio);
-    
   </script>
 
   <title>Padrão com Bootstrap e ES6</title>
@@ -66,7 +51,9 @@
 
 <body>
 
-  <div id="output"></div>
+
+
+
 
   <!-- Optional JavaScript -->
 

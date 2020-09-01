@@ -14,49 +14,47 @@
 
   <script type="text/babel">
 
-    // REVIEW o operador super da acesso ao método constructor do pai
+    let Carro = function() {
 
-    class Animal {
-      constructor(bico) {
-        this.cor = null
-        this.tamanho = null
-        this.bico = bico
-    }
+      this.cor = 'Azul'
+      this.modelo ='Civic'
+      this.velocidadeAtual = 0
+      this.velocidadeMaxima = 240
 
-    dormir() {
-      console.log('dormir');
-    }
+      this.acelerar = function() {
+       // this.velocidadeAtual += 10
 
-    voar() {
-      console.log('voar');
-    }
+       let velocidade = this.getvelocidadeAtual() + 10
+       this.setvelocidadeAtual(velocidade)
+      }
 
-    }
+      this.getvelocidadeAtual = function() {
+        return this.velocidadeAtual
+      }
 
-
-    class Passaro extends Animal {
-      constructor(tamanho) {
-        super('Médio')
-    }
+      this.setvelocidadeAtual = function(velocidadeAtual) {
+        this.velocidadeAtual = velocidadeAtual
+      }
 
     }
 
-    class Papagaio extends Passaro { // REVIEW herança de passaro em cascata
-      constructor(sabeFalar) {
-        super()
-        this.fala = sabeFalar
-    }
+    let carro = new Carro()
 
-    falar() {
-      console.log('curupacu');
-    }
+    carro.acelerar()
+    console.log(`A velocidade atual é ${carro.getvelocidadeAtual()}`);
 
-    }
+    carro.acelerar()
+    console.log(`A velocidade atual é ${carro.getvelocidadeAtual()}`);
 
-    let papagaio = new Papagaio(true)
+    carro.acelerar()
+    console.log(`A velocidade atual é ${carro.getvelocidadeAtual()}`);
 
-    console.log(papagaio);
+    carro.acelerar()
+    console.log(`A velocidade atual é ${carro.getvelocidadeAtual()}`);
     
+    carro.acelerar()
+    console.log(`A velocidade atual é ${carro.getvelocidadeAtual()}`);
+
   </script>
 
   <title>Padrão com Bootstrap e ES6</title>
@@ -66,7 +64,9 @@
 
 <body>
 
-  <div id="output"></div>
+
+
+
 
   <!-- Optional JavaScript -->
 

@@ -14,49 +14,30 @@
 
   <script type="text/babel">
 
-    // REVIEW o operador super da acesso ao método constructor do pai
+    class Produto {
+      constructor(descricao, preco) {
+        this.descricao = descricao
+        this.preco = preco
+      }
 
-    class Animal {
-      constructor(bico) {
-        this.cor = null
-        this.tamanho = null
-        this.bico = bico
+      verDescricao() {
+        console.log(`${this.descricao} por apenas ${this.preco}`);
+      }
     }
 
-    dormir() {
-      console.log('dormir');
+    let produto = new Produto('Notebook', 2200)
+    produto.verDescricao()
+
+    let produtoLiteral = {
+      descricao: 'Geladeira',
+      preco: 1900,
+      verDescricao: function() {
+        console.log(`${this.descricao} por apenas ${this.preco}`);
+      }
     }
 
-    voar() {
-      console.log('voar');
-    }
+    produtoLiteral.verDescricao()
 
-    }
-
-
-    class Passaro extends Animal {
-      constructor(tamanho) {
-        super('Médio')
-    }
-
-    }
-
-    class Papagaio extends Passaro { // REVIEW herança de passaro em cascata
-      constructor(sabeFalar) {
-        super()
-        this.fala = sabeFalar
-    }
-
-    falar() {
-      console.log('curupacu');
-    }
-
-    }
-
-    let papagaio = new Papagaio(true)
-
-    console.log(papagaio);
-    
   </script>
 
   <title>Padrão com Bootstrap e ES6</title>
@@ -66,7 +47,6 @@
 
 <body>
 
-  <div id="output"></div>
 
   <!-- Optional JavaScript -->
 

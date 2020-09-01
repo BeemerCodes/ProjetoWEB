@@ -14,49 +14,33 @@
 
   <script type="text/babel">
 
-    // REVIEW o operador super da acesso ao método constructor do pai
+    //SECTION rest
 
-    class Animal {
-      constructor(bico) {
-        this.cor = null
-        this.tamanho = null
-        this.bico = bico
+    function soma(...param) {
+
+      let resultado = 0
+
+      console.log(param);
+
+      param.forEach(v => resultado += v)
+
+      return resultado
     }
 
-    dormir() {
-      console.log('dormir');
+    console.log(soma(3, 8, 5, 7));
+
+    function multiplicacao(m, ...p) {
+      console.log(m);
+      let resultado = 0
+      console.log(p);
+
+      p.forEach(v => resultado += m * v)
+
+      return resultado
     }
 
-    voar() {
-      console.log('voar');
-    }
+    console.log(multiplicacao(5, 7, 12, 3, 49));
 
-    }
-
-
-    class Passaro extends Animal {
-      constructor(tamanho) {
-        super('Médio')
-    }
-
-    }
-
-    class Papagaio extends Passaro { // REVIEW herança de passaro em cascata
-      constructor(sabeFalar) {
-        super()
-        this.fala = sabeFalar
-    }
-
-    falar() {
-      console.log('curupacu');
-    }
-
-    }
-
-    let papagaio = new Papagaio(true)
-
-    console.log(papagaio);
-    
   </script>
 
   <title>Padrão com Bootstrap e ES6</title>
@@ -66,7 +50,9 @@
 
 <body>
 
-  <div id="output"></div>
+
+
+
 
   <!-- Optional JavaScript -->
 

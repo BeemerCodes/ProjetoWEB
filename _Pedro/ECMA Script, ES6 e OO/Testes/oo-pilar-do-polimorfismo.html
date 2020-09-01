@@ -17,10 +17,10 @@
     // REVIEW o operador super da acesso ao método constructor do pai
 
     class Animal {
-      constructor(bico) {
-        this.cor = null
-        this.tamanho = null
-        this.bico = bico
+      constructor(cor, tamanho, peso) {
+        this.cor = cor
+        this.tamanho = tamanho
+        this.peso = peso
     }
 
     dormir() {
@@ -35,15 +35,16 @@
 
 
     class Passaro extends Animal {
-      constructor(tamanho) {
-        super('Médio')
+      constructor(bico, cor, tamanho, peso) {
+        super(cor, tamanho, peso)
+        this.bico = bico
     }
 
     }
 
     class Papagaio extends Passaro { // REVIEW herança de passaro em cascata
-      constructor(sabeFalar) {
-        super()
+      constructor(sabeFalar, cor, tamanho, peso) {
+        super('medio', cor, tamanho, peso)
         this.fala = sabeFalar
     }
 
@@ -53,9 +54,29 @@
 
     }
 
-    let papagaio = new Papagaio(true)
+    class Avestruz extends Passaro {
+      constructor() {
+        super('grande' ,'branco e preto', '250', '15000')
+      }
+
+      enterrarCabeca() {
+        console.log('Enterrou a cabeça');
+      }
+
+      voar() {
+        console.log('Não voa');
+      }
+    }
+
+    let papagaio = new Papagaio(true, 'verde', 25, 350)
+
+    let avestruz = new Avestruz()
+
+    console.log(avestruz);
 
     console.log(papagaio);
+
+    avestruz.voar()
     
   </script>
 

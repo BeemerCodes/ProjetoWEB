@@ -14,49 +14,25 @@
 
   <script type="text/babel">
 
-    // REVIEW o operador super da acesso ao método constructor do pai
+    //SECTION destructuring
 
-    class Animal {
-      constructor(bico) {
-        this.cor = null
-        this.tamanho = null
-        this.bico = bico
-    }
+    /*let arr = [10 ,20 ,30, 40];
 
-    dormir() {
-      console.log('dormir');
-    }
+    let [ a, ...resto ] = arr;
 
-    voar() {
-      console.log('voar');
-    }
+    console.log(a);
+    console.log(resto);
+    */
 
-    }
+    let obj = {
+      a: 10, b:20, c:30, d:40
+    };
 
+    let { a, ...z } = obj;
 
-    class Passaro extends Animal {
-      constructor(tamanho) {
-        super('Médio')
-    }
+    console.log(a);
+    console.log(z);
 
-    }
-
-    class Papagaio extends Passaro { // REVIEW herança de passaro em cascata
-      constructor(sabeFalar) {
-        super()
-        this.fala = sabeFalar
-    }
-
-    falar() {
-      console.log('curupacu');
-    }
-
-    }
-
-    let papagaio = new Papagaio(true)
-
-    console.log(papagaio);
-    
   </script>
 
   <title>Padrão com Bootstrap e ES6</title>
@@ -66,7 +42,9 @@
 
 <body>
 
-  <div id="output"></div>
+
+
+
 
   <!-- Optional JavaScript -->
 
