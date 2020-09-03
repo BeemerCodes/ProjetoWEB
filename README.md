@@ -13,7 +13,7 @@ Curso WEB Completo
 * [x] Bootstrap & Design responsivo
 * [x] JavaScript
 * [x] Javacript Moderno (ECMA Script & ES6) & Orientação a Objetos
-* [ ] Iniciando Servidor Apache Php & MySlq
+* [x] Iniciando Servidor Apache Php & MySlq
 * [ ] Php 7
 * [ ] Php 7 & Orientação a Objetos
 * [ ] Banco de Dados MySql
