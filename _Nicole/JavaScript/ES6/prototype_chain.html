@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prototype chain</title>
+
+    <script>
+
+Object.prototype.attr50 = 'z'  //cuidado (metodo global)
+
+ let animal = {attr: 'a'}
+ let vertebrado = {__proto__: animal, attr2: 'b'}
+ let ave = {__proto__: vertebrado, attr3: 'c', attr2: 'x'}  //sobrepondo valor do atributo definifo arteriomente
+
+console.log(ave.attr, ave.attr2, ave.attr50)
+
+
+    </script>
+
+
+</head>
+<body>
+</body>
+</html>

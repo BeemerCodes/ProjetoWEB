@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desetruturacao</title>
+
+    <script>
+
+   let produto = {
+       descricao: 'Notebook',
+       preco: 1800,
+       detalhes: {
+           fabricante: 'abc',
+           modelo: 'xyz'
+       }
+   }
+    
+//token
+//array[]
+//objeto{}
+
+// let {descricao, preco} = produto
+
+//let {descricao: d, preco: p} = produto        //atribuindo novas variaveis para elementos do objeto
+
+//let {descricao: d, preco: p, desconto = 5} = produto       //variavel que retorna undefined com valor de default definido
+
+let {detalhes: {fabricante: f, modelo = 'Nao informado'}} = produto      //acessar um objeto dentro de um atributo de outro objeto
+
+console.log(f, modelo)
+
+    </script>
+
+
+</head>
+<body>
+</body>
+</html>

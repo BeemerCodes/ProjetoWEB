@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variavel Let</title>
+    <script>
+        /**
+        //3 escopos: global funcao e bloco
+
+var serie = 'Friends'
+
+        function x() {
+            var serie = 'Game of thrones'
+            console.log('Funcao: ' + serie)
+            if (true) {                   //a variavel bloco sofre elevacao para o escopo para o escopo da funcao
+            console.log('Bloco dentro da funcao: ' + serie)
+            }
+        }
+
+        x();            //caso a variavel seja criada em um bloco a chamada da funcao deve ser feita dentro desse bloco pois no escopo global retornara um erro
+
+
+ //se o bloco estiver fora da funcao a variavel sofre elevacao para o escopo global
+        
+if (true) {
+         console.log('Global: ' + serie)
+        }
+
+
+//let preserva o escopo onde a variavel é criada (neste caso nao é possivel chamar a variavel fora)
+       
+if(true) {
+            let outraSerie = 'The walking dead'
+            console.log(outraSerie)
+        }
+        console.log(outraSerie);
+*/
+
+var serie = 'Friends'
+
+{//o hoisting sobrescreve com o valor da ultima variavel (consoles apresentam ultima informacao atribuida a variavel)
+    var serie = 'The walking dead'
+    console.log('dentro do bloco: ' + serie)
+}
+console.log('fota do bloco: ' + serie)
+
+let show = 'Dark'
+{
+    let show = 'Penny Dreadful'
+    console.log(show)
+}
+
+console.log(show)
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

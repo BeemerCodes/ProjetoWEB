@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desetruturacao</title>
+
+    <script>
+
+//destructuring
+
+let frutas = ['Abacaxi', 'Uva', 'Pera', 'Mamao']
+
+//let [a, b, , c] = frutas // [] para a operacao de desestruturacao
+let [a, b, c, d, e = 'Banana']= frutas //aplicar valor default caso seja undefined
+
+//console.log(a, b, c, d, e)
+
+//para array multidimensional
+
+let coisas = [['Abacaxi', 'Uva', 'Pera', 'Mamao'], ['Jose', 'Maria']]
+
+//let [,[,x]] = coisas
+
+let [[, , x]] = coisas
+
+console.log(x)
+
+
+
+    </script>
+
+
+</head>
+<body>
+</body>
+</html>

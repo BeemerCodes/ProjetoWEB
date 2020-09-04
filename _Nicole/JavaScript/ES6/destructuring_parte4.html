@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desetruturacao</title>
+
+    <script>
+
+
+/*
+  let arr = [10, 20 ,30, 40]
+
+  let [a, ...b] = arr
+
+  function soma() {
+       let resultado = 0
+       b.forEach(v => resultado += v)
+       return resultado
+   }
+
+  console.log(a)
+  console.log(soma())
+   */
+
+
+let obj = {
+  a: 10, b: 20, c: 30, d: 40
+}
+
+let{a, ...z} = obj
+
+console.log(a)
+console.log(z)
+
+    </script>
+
+
+</head>
+<body>
+</body>
+</html>

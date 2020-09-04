@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pilar do Polimorfismo</title>
+
+    <script>
+
+   class Animal {
+       constructor(cor, tamanho, peso) {
+            this.cor = cor
+            this.tamanho = tamanho
+            this.peso = peso
+       }
+       dormir() {
+      console.log('Dormir')
+       }
+   }
+
+  class Passaro extends Animal {
+      constructor(bico, cor, tamanho, peso) {
+          super(cor, tamanho, peso)
+          this.bico = bico
+      }
+      voar() {
+        console.log('Voar')
+      }
+  }
+
+  class Papagaio extends Passaro{
+      constructor(falar, cor, tamanho, peso) {
+          super('Medio', cor, tamanho, peso)
+          this.falar = falar
+      }
+      falar() {
+          console.log('Falar')
+      }
+  }
+
+  class Avestruz extends Passaro{
+        constructor() {
+            super('Grannde', 'Branco e Preto', 250, 15000)
+        }
+        enterrarCabeca() {
+            console.log('Enterrar a cabeca')
+        }
+        voar() {             //sobrescrevendo o metodo voar
+            console.log('Nao sabe voar')
+        }
+  }
+
+let passaro = new Passaro('Curto', 'Verde', 30, 300);
+let papagaio = new Papagaio(true, 'Vermelho', 35, 500);
+let avestruz = new Avestruz()
+
+
+console.log(papagaio)
+console.log(passaro)
+console.log(avestruz)
+
+papagaio.voar()
+avestruz.enterrarCabeca()
+avestruz.voar()
+
+    </script>
+
+</head>
+<body>
+</body>
+</html>
