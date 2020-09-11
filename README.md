@@ -14,7 +14,7 @@ Curso WEB Completo
 * [x] JavaScript
 * [x] Javacript Moderno (ECMA Script & ES6) & Orientação a Objetos
 * [x] Iniciando Servidor Apache Php & MySlq
-* [ ] Php 7
+* [x] Php 7
 * [ ] Php 7 & Orientação a Objetos
 * [ ] Banco de Dados MySql
 * [ ] Ajax
