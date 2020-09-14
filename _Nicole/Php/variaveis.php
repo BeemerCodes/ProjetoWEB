@@ -3,23 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
+    <title>Variaveis</title>
 </head>
 <body>
 
 
     <?php 
-        echo 'Esta e uma tag longa'
+        
+      //string
+      $nome = 'Nicole Ruivo';
+      
+      //int
+      $idade = 22;
+
+      //float
+      $peso = 67.2;  
+
+      //boolean
+      $fumante = true; // false = vazio // true = 1
+    
+     //alterando valores de variaveis
+      $idade = 23;
     ?>
-    
- <br>
 
-    <?= 'Esta e uma tag de impressao'?>
-
-  <br>
-
-    <? echo 'Esta e uma tag curta'?>
-
-    
+         <h1>Ficha cadastral</h1>
+         <br>
+         <p>Nome: <?= $nome?></p>
+         <p>Idade: <?= $idade?></p>
+         <p>Peso: <?= $peso?></p>
+         <p>Fumante: <?= $fumante?></p>
 </body>
 </html>
